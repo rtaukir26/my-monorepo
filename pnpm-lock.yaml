@@ -6,15 +6,19 @@ settings:
 
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      vite:
+        specifier: ^5.3.0
+        version: 5.4.19
 
   packages/react-search-input-zn:
     dependencies:
       react:
-        specifier: '>=18.0.0'
+        specifier: '>=17.0.0'
         version: 19.1.1
       react-dom:
-        specifier: '>=18.0.0'
+        specifier: '>=17.0.0'
         version: 19.1.1(react@19.1.1)
     devDependencies:
       '@vitejs/plugin-react':

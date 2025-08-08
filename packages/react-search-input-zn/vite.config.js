@@ -6,17 +6,20 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.jsx"),
-      name: "ReactSearchInputZn",
+      entry: path.resolve(__dirname, "src/index.jsx"), // or .tsx if TS
+      name: "ReactSearchBoxZn",
       fileName: (format) => `index.${format}.js`,
-      formats: ["es", "cjs"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom"], // ✅ don't bundle React
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+        },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "style.css") return "index.css";
+          return assetInfo.name;
         },
       },
     },
