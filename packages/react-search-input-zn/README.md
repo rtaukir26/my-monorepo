@@ -45,13 +45,13 @@ const [data,setData]=useState([
 
 function App() {
   const [result, setResult] = useState([]);
-   const handleChange = (searchResults) => {
-       console.log("Search results:", searchResults);
-   };
+
   return (
     <ReactSearchBox
       data={data}
-      handleChange={handleChange},
+      handleChange={(filteredData) => {
+          console.log("Filtered data:", filteredData);
+        }}
       matchesWith={["name", "price"]}
       //optional
       styles={{

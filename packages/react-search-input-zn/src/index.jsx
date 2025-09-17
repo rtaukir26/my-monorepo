@@ -23,7 +23,9 @@ const ReactSearchBox = ({
         item[key]?.toLowerCase().includes(value?.toLowerCase())
       );
     });
-    handleChange(result);
+    if (handleChange) {
+      handleChange(result);
+    }
   };
   return (
     <div className="search-container">
@@ -42,7 +44,9 @@ const ReactSearchBox = ({
           alt="close"
           onClick={() => {
             setSearchInput("");
-            handleChange(receivedData);
+            if (handleChange) {
+              handleChange(receivedData);
+            }
           }}
         />
       )}
