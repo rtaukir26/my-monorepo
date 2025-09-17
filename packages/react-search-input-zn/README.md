@@ -1,4 +1,4 @@
-# react-search-input-zn
+# react-search-input-box
 
 A lightweight and customizable **React search box** component with:
 
@@ -10,9 +10,9 @@ A lightweight and customizable **React search box** component with:
 
 ## Demo
 
-<!-- ![Demo](./src/assets/reactSearchInputDemo.gif) -->
+![Demo](./src/assets/reactSearchInputDemo.gif)
 
-![Demo](https://raw.githubusercontent.com/rtaukir26/my-monorepo/master/packages/react-search-input-zn/src/assets/reactSearchInputDemo.gif)
+<!-- ![Demo](https://raw.githubusercontent.com/rtaukir26/my-monorepo/master/packages/react-search-input-zn/src/assets/reactSearchInputDemo.gif) -->
 
 ## Installation
 

@@ -1,6 +1,5 @@
 .search-container {
   position: relative;
-  width: 100%;
 }
 .rsi-input {
   padding: 10px;
@@ -15,7 +14,7 @@
 .rsi-close {
   position: absolute;
   cursor: pointer;
-  top: 8px;
+  top: 10px;
   right: 10px;
   opacity: 0.5;
   margin-right: 25px;
@@ -23,7 +22,7 @@
 .rsi-img {
   position: absolute;
   width: 20px;
-  top: 10px;
+  top: 12px;
   right: 10px;
   opacity: 0.5;
 }

@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "pnpm --filter react-search-input-zn dev",
+    "dev": "pnpm --filter react-search-box-zn dev",
     "build": "pnpm -r run build",
     "clean": "pnpm -r exec rm -rf dist"
   },

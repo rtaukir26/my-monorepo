@@ -1,6 +1,6 @@
 {
   "name": "react-search-box-zn",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "React search input component that supports search & filter the data of an array of objects.",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -8,6 +8,7 @@
     "dist",
     "src/index.css"
   ],
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/rtaukir26/my-monorepo.git",
