@@ -41,7 +41,7 @@ const [data,setData]=useState([
   { name: "mango", price: "200" },
   { name: "apple", price: "160" },
   { name: "banana", price: "120" },
-];)
+])
 
 function App() {
   const [result, setResult] = useState([]);

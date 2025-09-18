@@ -1,22 +1,29 @@
 {
   "name": "react-search-box-zn",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": "React search input component that supports search & filter the data of an array of objects.",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src/index.css"
   ],
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style": "./src/index.css"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rtaukir26/my-monorepo.git",
     "directory": "packages/react-search-box-zn"
   },
   "scripts": {
-    "build": "vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build && tsc --emitDeclarationOnly --declaration --outDir dist"
   },
   "keywords": [
     "react",
@@ -39,6 +46,7 @@
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0",
-    "vite-plugin-static-copy": "^3.0.0"
+    "vite-plugin-static-copy": "^3.0.0",
+    "typescript": "^5.0.0"
   }
 }
